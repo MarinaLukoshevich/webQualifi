@@ -9,63 +9,54 @@
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/media.css">
 
-  <script defer src="https://c.webfontfree.com/c.js?f=ALSSector-Regular" type="text/javascript"></script>
-  <script defer src="https://c.webfontfree.com/c.js?f=Inter" type="text/javascript"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/0915cee867624e0c356dd676beb2dcee?family=ALS+Sector+Regular"
+    rel="stylesheet">
+
   <script defer src="script.js"></script>
 </head>
 
 <body>
   <header class="header">
-    <div class="container flex header__container">
+    <div class="header__container container flex">
       <a href="#" class="header__logo">
-        <img src="./img/logo.svg" alt="logo" class="header__logo">
+        <img src="./img/logo.svg" alt="логотип" class="header__logo-img">
       </a>
 
-      <nav class="nav header__nav" title="Главное меню">
+      <nav class="nav header__nav">
         <ul class="nav__list list-reset flex">
           <li class="nav__item">
-            <a href="#home" class="nav__link">
-              Home
+            <a href="#hero" class="btn nav__link active">
+              Главная
             </a>
           </li>
           <li class="nav__item">
-            <a href="#services" class="nav__link">
-              Services
+            <a href="#about" class="btn nav__link">
+              Обо мне
             </a>
           </li>
           <li class="nav__item">
-            <a href="#articles" class="nav__link">
-              Articles
+            <a href="#skill" class="btn nav__link">
+              Навыки
             </a>
           </li>
           <li class="nav__item">
-            <a href="#clients" class="nav__link">
-              Clients
+            <a href="#work" class="btn nav__link">
+              Работы
             </a>
           </li>
           <li class="nav__item">
-            <a href="#contacts" class="nav__link">
-              Contacts
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#join-us" class="nav__link">
-              Join us
+            <a href="#review" class="btn nav__link">
+              Отзывы
             </a>
           </li>
         </ul>
-
       </nav>
-      <button class="btn header__btn btn-reset">
-        Free trail
-      </button>
 
       <button class="burger btn-reset">
-        <span class="burger__line">
-        </span>
-        <span class="burger__line">
-        </span>
-        <span class="burger__line"></span>
+        <img src="img/burger.svg" alt="меню" class="burger__svg">
       </button>
     </div>
   </header>
@@ -74,44 +65,134 @@
 
 
   <main class="main">
-    <section class="hero">
-      <div class="container">
-        <h2 class="hero__title">
-          Марина Лукошевич
-        </h2>
-        <p>
-          личный сайт веб разработчика
-        </p>
+    <section id="hero" class="hero">
+      <div class="hero__container container flex-col">
+        <img src="img/hero-anim.svg" alt="бутылка" class="bottle">
+
+        <div class="block block-strip">
+          <img src="img/rBoss.svg" alt="Rocket Boss" class="rocket-boss">
+          <h1 class="main-title">Марина Лукошевич</h1>
+          <p>личный сайт веб разработчика</p>
+        </div>
+        <button class="btn-reset btn section-btn">Подробнее</button>
       </div>
     </section>
 
 
-    <section class="about section-offset">
-      <div class="container">
+    <section id="about" class="about">
+      <div class="about__container container">
+        <img src="img/about-anim.svg" alt="облако" class="cloud">
+
+        <h2 class="section-title">Обо мне</h2>
+        <div class="about__content flex">
+          <div class="about__content-detail flex-col">
+            <p>Меня зовут Марина. Я занимаюсь разработкой современных сайтов и приложений.
+              <br><br> Мне нравится создавать интересные и современные проекты.
+            </p>
+            <a href="#skill" class="btn-reset btn section-btn">Мои навыки</a>
+          </div>
+
+          <div class="about__content-short block block-bg">
+            <div class="about__photo-wrap flex">
+              <img src="img/photo.jpg" alt="фото">
+            </div>
+            <ul class="about__list list-reset flex-col">
+              <li>
+                <b>Где живу:</b>Республика Беларусь
+              </li>
+              <li>
+                <b>Возраст:</b>27
+              </li>
+              <li>
+                <b>Дата рождения:</b>1997
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section class="skill section-offset">
+
+    <section id="skill" class="skill">
       <div class="container">
+        <h2 class="section-title">Навыки</h2>
+        <div class="skill__block block block-strip flex-col">
+          <p>ЭТОТ САЙТ Я СДЕЛАЛА В РАМКАХ ОБУЧЕНИЯ ШКОЛЫ
+            ROCKET TECH SCHOOL</p>
+          <img src="img/web-tools.svg" alt="веб инструменты" class="web">
+          <a href="#work" class="btn-reset btn section-btn">Смотреть работы</a>
+        </div>
       </div>
     </section>
 
-    <section class="work section-offset">
+
+
+    <section id="work" class="work">
       <div class="container">
+        <h2 class="section-title">Работы</h2>
+        <ul class="work__list list-reset flex">
+          <li>
+            <img src="img/work1.jpg" alt="работа 1">
+          </li>
+          <li>
+            <img src="img/work2.jpg" alt="работа 2">
+          </li>
+          <li>
+            <img src="img/work3.jpg" alt="работа 3">
+          </li>
+        </ul>
       </div>
     </section>
 
 
-    <section class="review section-offset">
+    <section id="review" class="review">
       <div class="container">
+        <h2 class="section-title">Отзывы</h2>
+        <ul class="review__list list-reset flex">
+
+          <li class="review__item flex">
+            <div class="review__block block block-bg flex-col">
+              <div class="review__photo-wrap flex">
+                <img src="img/review1.jpg" alt="фото">
+              </div>
+              <span class="review__block-name">ВЛАДИМИР</span>
+              <p class="review__block-descr">Основатель Rocket Tech School</p>
+            </div>
+            
+            <div class="review__opinion">
+              <p class="review__opinion-descr">
+                Эта девочка проходила обучение веб разработке 4 месяца, и уже создает сложные сайты!
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <li class="review__item flex">
+              <div class="review__block block block-bg flex-col">
+                <div class="review__photo-wrap flex">
+                  <img src="img/review1.jpg" alt="фото">
+                </div>
+                <span class="review__block-name">ВЛАДИМИР</span>
+                <p class="review__block-descr">Основатель Rocket Tech School</p>
+              </div>
+              
+              <div class="review__opinion">
+                <p class="review__opinion-descr">
+                  Эта девочка проходила обучение веб разработке 4 месяца, и уже создает сложные сайты!
+                </p>
+              </div>
+          </li>
+        </ul>
+        
       </div>
     </section>
   </main>
 
 
   <footer class="footer">
-    <div class="container flex footer__container">
-      <div class="footer-left flex">
+    <div class="footer__container container flex">
+      <!-- <div class="footer-left flex">
         <a href="#" class="footer-logo">
           <img src="img/logo.svg" alt="Logo">
         </a>
@@ -179,7 +260,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </footer>
 
