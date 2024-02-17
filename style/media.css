@@ -3,34 +3,204 @@
     font-size: 14px;
   }
 
+  section {
+    padding: 80px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
   .main-title,
   .section-title {
     font-size: 30px;
   }
 
-  .section-offset {
-    padding: 80px 0;
+  .section-title {
+    text-shadow: 2px 2px var(--black);
   }
-
 
   .section-btn {
     font-size: 14px;
     padding: 17px 26px;
   }
 
-
-  
   .nav__link {
     font-size: 30px;
   }
 
 
 
-  
-  .about::before {
-    background: url(../img/bg-about-mob.svg) no-repeat top/cover;
-  }
 
+
+/* COMMON__BLOCK */
+.block::before {
+  top: 10px;
+  left: 10px;
+  background-size: 40px 10px;
+}
+
+.block-strip {
+  padding: 50px 16px 20px 16px;
+  /* background-position: left 20px top 14px; */
+}
+.block.block-strip::before {
+  background-size: 40px 10px;
+  top: 10px;
+}
+.block-strip::after {
+  height: 30px;
+}
+
+.block-bg {
+  padding: 30px 10px 10px;
+}
+
+
+
+
+/* COMMON__ANIMATIONS */
+.bottle {
+  width: 30%;
+  bottom: -120px;
+  left: 20px;
+}
+
+.cloud {
+ display: none;
+}
+
+
+
+
+
+
+
+/* COMMON__BACKGROUND */
+.hero {
+  background: var(--violet-d) url(../img/bg-hero-desc.svg) no-repeat bottom 50px center/100%;
+} 
+.about {
+  background:var(--blue) url(../img/bg-about-desc.svg) no-repeat center/100%;
+} 
+.skill {
+  background: var(--violet) url(../img/bg-skill-desc.svg) no-repeat bottom 50px center/100%;
+}
+.work {
+  background: none;
+  background-color: var(--violet-d);
+}
+.review {
+  background: none;
+  background-color: var(--violet);
+}
+
+
+
+
+/* MAIN */
+.hero {
+  padding-bottom: 200px;
+}
+
+.hero__container {
+  gap: 80px;
+}
+
+
+
+
+
+.about__content {
+  flex-direction: column-reverse;
+  gap: 35px;
+}
+
+.about__content-detail {
+  padding: 30px 10px;
+  border-radius: 0 0 12px 12px;
+  gap: 30px;
+  flex-basis: 0;
+  box-shadow: 2px 3px var(--black);
+}
+.about__content-detail a {
+  align-self: center;
+}
+
+
+
+
+
+
+
+.skill__block {
+  position: relative;
+  margin-bottom: 260px;
+}
+
+.skill__block a {
+  position: absolute;
+  bottom: -230px;
+  min-width: 210px;
+}
+
+
+
+
+.work__list {
+  flex-direction: column;
+}
+
+
+
+
+
+
+.review__list {
+  flex-direction: column;
+}
+
+.review__item {
+  flex-direction: column;
+  gap: 13px;
+} 
+
+.review__block {
+  width: 210px;
+}
+
+.review__photo-wrap {
+  width: 190px;
+}
+
+.review__opinion {
+  background: url(../img/opinion-mob.svg) no-repeat center/ 100%;
+  width: 210px;
+}
+
+.review__opinion-descr {
+  padding: 15px 10px;
+  min-height: max-content;
+}
+
+
+
+
+
+
+/* FOOTER */
+.footer__container {
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer__person {
+  text-align: center;
+}
+
+.footer__copyright {
+  order: 1;
+}
 
 
 

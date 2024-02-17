@@ -219,25 +219,28 @@ section {
 
 /* COMMON__BACKGROUND */
 .header,
-.work,
 .footer {
   background-color: var(--violet-d);
 }
 
-
-.skill,
-.review {
-  background-color: var(--violet);
-}
-
-
 .hero {
   background: var(--violet-d) url(../img/bg-hero-desc.svg) no-repeat bottom 50px center/100%;
 } 
-
 .about {
   background:var(--blue) url(../img/bg-about-desc.svg) no-repeat center/100%;
 } 
+.skill {
+  background: var(--violet) url(../img/bg-skill-desc.svg) no-repeat bottom 50px center/100%;
+}
+.work {
+  background: var(--violet-d) url(../img/bg-work-desc.svg) no-repeat center/90%;
+}
+.review {
+  background: var(--violet) url(../img/bg-rev-desc.svg) no-repeat center/90%;
+}
+
+
+
 
 
 
@@ -255,6 +258,11 @@ padding: 15px 0;
 
 .header__logo {
   margin-right: 275px;
+}
+
+.header__logo-img {
+width: 84px;
+height: 47px;
 }
 
 .nav__list  {
@@ -290,6 +298,8 @@ padding-top: 260px;
 
 
 
+
+
 .about__container {
   position: relative;
 }
@@ -309,6 +319,7 @@ padding-top: 260px;
 
 .about__content-detail p {
   color: var(--white);
+  font-weight: 400;
 }
 
 .about__photo-wrap {
@@ -328,10 +339,16 @@ padding-top: 260px;
 
 
 
+
+
 .skill__block {
   gap: 40px;
   max-width: 640px;
   margin: 0 auto;
+}
+
+.skill__block p {
+  text-align: center;
 }
 
 .skill__block a {
@@ -353,17 +370,85 @@ padding-top: 260px;
 
 
 
+
+.review__list {
+  gap: 15px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+
+.review__item {
+  gap: 7px;
+} 
+
 .review__block {
   align-items: flex-start;
   gap: 10px;
+  width: 195px;
   box-shadow: 4px 4px var(--black);
+}
+
+.review__photo-wrap {
+  width: 154px;
+}
+
+.review__photo-wrap img{
+  width: 100%;
+}
+
+.review__block-descr {
+  font-weight: 400;
+  opacity: 0.5;
 }
 
 .review__opinion {
   background: url(../img/opinion.svg) no-repeat center/ 100%;
+  width: 315px;
+  font-weight: 400;
 }
 
 .review__opinion-descr {
-  max-width: 257px;
+  padding: 20px 20px 20px 35px;
   min-height: 161px;
 }
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+  color: var(--white);
+  padding: 40px 0;
+}
+
+.footer__container {
+justify-content: space-between;
+}
+
+.footer__person span{
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.footer__person p,
+.footer__copyright{
+  font-weight: 400;
+}
+
+.footer__soc {
+  gap: 20px;
+}
+
+
+
+
+
+
+
+
+
