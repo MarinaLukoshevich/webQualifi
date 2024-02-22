@@ -78,22 +78,113 @@
 
 /* COMMON__BACKGROUND */
 .hero {
-  background: var(--violet-d) url(../img/bg-hero-desc.svg) no-repeat bottom 50px center/100%;
+  background: var(--violet-d) url(../img/bg-hero-mob.svg) no-repeat bottom 50px center/100%;
 } 
 .about {
-  background:var(--blue) url(../img/bg-about-desc.svg) no-repeat center/100%;
+  background:var(--blue) url(../img/bg-about-mob.svg) no-repeat center/100%;
 } 
 .skill {
-  background: var(--violet) url(../img/bg-skill-desc.svg) no-repeat bottom 50px center/100%;
+  background: var(--violet) url(../img/bg-skill-mob.svg) no-repeat bottom 150px center/100%;
 }
 .work {
-  background: none;
-  background-color: var(--violet-d);
+  background: var(--violet-d) url(../img/bg-work-mob.svg) no-repeat left top 80px/40%;
 }
 .review {
   background: none;
   background-color: var(--violet);
 }
+
+
+
+
+
+
+
+
+/* HEADER */
+.header__container {
+  justify-content: space-between;
+  position: relative;
+}
+
+.header__mob {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 0;
+}
+
+.header__logo-img {
+  width: 53px;
+}
+
+.burger,
+.close {
+  width: 30px;
+}
+
+.close {
+  display: block;
+}
+
+.header__main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  align-items: flex-start;
+  padding: 0 20px;
+  background-color: var(--violet-d);
+  transform: translateY(-200%);
+  transition: transform .6s ease-in-out;
+}
+
+.header__main--active {
+  transform: translateY(0);
+  justify-content: space-between;
+}
+
+.nav {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  right: 0;
+}
+
+.nav__list {
+  flex-direction: column;
+  gap: 25px;
+}
+
+.nav__item {
+  width: 210px;
+}
+
+.nav__link {
+  display: inline-block;
+  width: 100%;
+}
+
+.close {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

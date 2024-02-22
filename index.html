@@ -20,44 +20,56 @@
 
 <body>
   <header class="header">
-    <div class="header__container container flex">
-      <a href="#" class="header__logo">
-        <img src="./img/logo.svg" alt="логотип" class="header__logo-img">
-      </a>
+    <div class="header__container container">
+      <div class="header__mob">
+        <a href="#" class="header__logo">
+          <img src="./img/logo.svg" alt="логотип" class="header__logo-img">
+        </a>
+        <button class="burger btn-reset">
+          <img src="img/burger.svg" alt="меню" class="burger__svg">
+        </button>
+      </div>
 
-      <nav class="nav header__nav">
-        <ul class="nav__list list-reset flex">
-          <li class="nav__item">
-            <a href="#hero" class="btn nav__link active">
-              Главная
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="btn nav__link">
-              Обо мне
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#skill" class="btn nav__link">
-              Навыки
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#work" class="btn nav__link">
-              Работы
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#review" class="btn nav__link">
-              Отзывы
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__main flex">
+        <a href="#" class="header__logo">
+          <img src="./img/logo.svg" alt="логотип" class="header__logo-img">
+        </a>
 
-      <button class="burger btn-reset">
-        <img src="img/burger.svg" alt="меню" class="burger__svg">
-      </button>
+        <nav class="nav header__nav nav--active">
+          <ul class="nav__list list-reset flex">
+            <li class="nav__item">
+              <a href="#hero" class="btn nav__link active">
+                Главная
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="btn nav__link">
+                Обо мне
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skill" class="btn nav__link">
+                Навыки
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="btn nav__link">
+                Работы
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#review" class="btn nav__link">
+                Отзывы
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="close btn-reset">
+          <img src="img/close.svg" alt="меню" class="close__svg">
+        </button>
+
+      </div>
     </div>
   </header>
 
@@ -65,7 +77,7 @@
 
 
   <main class="main">
-    <section id="hero" class="hero">
+    <section id="hero" class="section hero">
       <div class="hero__container container flex-col">
         <img src="img/hero-anim.svg" alt="бутылка" class="bottle">
 
@@ -79,7 +91,7 @@
     </section>
 
 
-    <section id="about" class="about">
+    <section id="about" class="section about">
       <div class="about__container container">
         <img src="img/about-anim.svg" alt="облако" class="cloud">
 
@@ -114,7 +126,7 @@
     </section>
 
 
-    <section id="skill" class="skill">
+    <section id="skill" class="section skill">
       <div class="container">
         <h2 class="section-title">Навыки</h2>
         <div class="skill__block block block-strip flex-col">
@@ -127,8 +139,7 @@
     </section>
 
 
-
-    <section id="work" class="work">
+    <section id="work" class="section work">
       <div class="container">
         <h2 class="section-title">Работы</h2>
         <ul class="work__list list-reset flex">
@@ -146,7 +157,7 @@
     </section>
 
 
-    <section id="reviw" class="review">
+    <section id="review" class="section review">
       <div class="container">
         <h2 class="section-title">Отзывы</h2>
         <ul class="review__list list-reset flex">

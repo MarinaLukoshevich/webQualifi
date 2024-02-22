@@ -1,4 +1,9 @@
 /* RESET */
+html,
+body {
+  scroll-behavior: smooth; /* плавный скрол */
+}
+
 html {
   box-sizing: border-box;
 }
@@ -38,7 +43,6 @@ h2 {
   background-color: transparent;
   cursor: pointer;
 }
-
 
 
 
@@ -99,6 +103,9 @@ section {
   align-items: center;
 }
 
+.stop-scroll {
+  overflow: hidden;
+}
 
 
 
@@ -135,7 +142,7 @@ section {
 }
 
 .nav__link:active,
-.nav__link.active {
+.nav__link.nav__link--active {
   color: var(--white);
   background-color: var(--violet);
 }
@@ -256,22 +263,29 @@ width: 100%;
 padding: 15px 0;
 }
 
+.header__mob {
+  display: none;
+}
+
 .header__logo {
   margin-right: 275px;
 }
 
 .header__logo-img {
 width: 84px;
-height: 47px;
 }
 
 .nav__list  {
   gap: 20px;
 }
 
-.burger {
+.close {
   display: none;
 }
+
+
+
+
 
 
 
