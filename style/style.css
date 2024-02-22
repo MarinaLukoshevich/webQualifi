@@ -47,6 +47,7 @@ h2 {
 
 
 
+
 /* COMMON */
 :root {
   --black: #000000;
@@ -86,10 +87,10 @@ section {
 }
 
 .section-title {
-  color: var(--white);
-  text-shadow: 5px 5px var(--black);
   margin-bottom: 60px;
   text-align: center;
+  text-shadow: 5px 5px var(--black);
+  color: var(--white);
 }
 
 .flex {
@@ -113,9 +114,9 @@ section {
 
 /* COMMON__BTN */
 .btn {
+  border: 2px solid var(--black);
   font: 700 20px "ALS Sector Regular";
   text-align: center;
-  border: 2px solid var(--black);
   transition: .3s ease-in-out;
   transition-property: color, background-color;
 }
@@ -123,9 +124,9 @@ section {
 .section-btn {
   padding: 22px 26px;
   border-radius: 100px;
+  min-width: 204px;
   background-color: var(--green);
   box-shadow: 4px 4px var(--black);
-  min-width: 204px;
 }
 .section-btn:hover {
   background-color: var(--white);
@@ -151,7 +152,6 @@ section {
 
 
 
-
 /* COMMON__BLOCK */
 .block {
   position: relative;
@@ -171,15 +171,15 @@ section {
 }
 
 .block-strip {
+  padding: 90px 40px 40px;
   border: 2px solid var(--black);
   background-color: var(--white);
-  padding: 90px 40px 40px;
   background-position: left 20px top 14px;
   box-shadow: 0 4px var(--black);
 }
 .block.block-strip::before {
-  background-size: 83px 21px;
   top: 14px;
+  background-size: 83px 21px;
 }
 .block-strip::after {
   content: "";
@@ -187,10 +187,10 @@ section {
   top: 0;
   right: 0;
   left: 0;
-  height: 50px;
-  background-color: var(--block);
   border-bottom: 2px solid var(--black);
   border-radius: 10px 10px 0 0;
+  height: 50px;
+  background-color: var(--block);
 }
 
 .block-bg {
@@ -214,10 +214,10 @@ section {
 
 .bottle,
 .cloud {
-  animation: anim 2s alternate linear infinite;
   position: absolute;
   bottom: -60px;
   left: 30px;
+  animation: anim 2s alternate linear infinite;
 }
 
 
@@ -229,7 +229,6 @@ section {
 .footer {
   background-color: var(--violet-d);
 }
-
 .hero {
   background: var(--violet-d) url(../img/bg-hero-desc.svg) no-repeat bottom 50px center/100%;
 } 
@@ -250,21 +249,20 @@ section {
 
 
 
-
-
-
-
-
 /* HEADER*/
 .header {
 position: fixed;
 z-index: 1000;
-width: 100%;
 padding: 15px 0;
+width: 100%;
 }
 
 .header__mob {
   display: none;
+}
+
+.header__main {
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -287,15 +285,9 @@ width: 84px;
 
 
 
-
-
-
-
-
-
 /* MAIN */
 .hero {
-padding-top: 260px;
+  padding-top: 260px;
 }
 
 .hero__container {
@@ -313,7 +305,6 @@ padding-top: 260px;
 
 
 
-
 .about__container {
   position: relative;
 }
@@ -323,42 +314,40 @@ padding-top: 260px;
 }
 
 .about__content-detail {
-  padding: 35px;
-  background-color: var(--violet);
-  border-radius: 0 0 0 12px;
   align-items: flex-start;
   gap: 50px;
   flex-basis: calc(920px - 375px);
+  padding: 35px;
+  border-radius: 0 0 0 12px;
+  background-color: var(--violet);
 }
 
 .about__content-detail p {
-  color: var(--white);
   font-weight: 400;
+  color: var(--white);
 }
 
 .about__photo-wrap {
+  margin-bottom: 20px;
   max-width: 335px;
   max-height: 185px;
   overflow: hidden;
-  margin-bottom: 20px;
 }
 
 .about__list {
-  font-weight: 400;
   align-items: flex-start;
   gap: 5px;
+  font-weight: 400;
 }
-
-
 
 
 
 
 
 .skill__block {
+  margin: 0 auto;
   gap: 40px;
   max-width: 640px;
-  margin: 0 auto;
 }
 
 .skill__block p {
@@ -373,8 +362,6 @@ padding-top: 260px;
 
 
 
-
-
 .work__list {
   gap: 20px;
 }
@@ -383,14 +370,11 @@ padding-top: 260px;
 
 
 
-
-
 .review__list {
   gap: 15px;
-  max-width: 1050px;
   margin: 0 auto;
+  max-width: 1050px;
 }
-
 
 .review__item {
   gap: 7px;
@@ -417,17 +401,15 @@ padding-top: 260px;
 }
 
 .review__opinion {
-  background: url(../img/opinion.svg) no-repeat center/ 100%;
   width: 315px;
   font-weight: 400;
+  background: url(../img/opinion.svg) no-repeat center/ 100%;
 }
 
 .review__opinion-descr {
   padding: 20px 20px 20px 35px;
   min-height: 161px;
 }
-
-
 
 
 
@@ -440,13 +422,13 @@ padding-top: 260px;
 }
 
 .footer__container {
-justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer__person span{
-  text-transform: uppercase;
   display: inline-block;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .footer__person p,

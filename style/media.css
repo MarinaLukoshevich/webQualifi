@@ -21,8 +21,8 @@
   }
 
   .section-btn {
-    font-size: 14px;
     padding: 17px 26px;
+    font-size: 14px;
   }
 
   .nav__link {
@@ -45,8 +45,8 @@
   /* background-position: left 20px top 14px; */
 }
 .block.block-strip::before {
-  background-size: 40px 10px;
   top: 10px;
+  background-size: 40px 10px;
 }
 .block-strip::after {
   height: 30px;
@@ -59,18 +59,17 @@
 
 
 
+
 /* COMMON__ANIMATIONS */
 .bottle {
-  width: 30%;
   bottom: -120px;
   left: 20px;
+  width: 30%;
 }
 
 .cloud {
  display: none;
 }
-
-
 
 
 
@@ -98,19 +97,16 @@
 
 
 
-
-
-
 /* HEADER */
 .header__container {
-  justify-content: space-between;
   position: relative;
+  justify-content: space-between;
 }
 
 .header__mob {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -135,9 +131,9 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 100vh;
   align-items: flex-start;
   padding: 0 20px;
+  height: 100vh;
   background-color: var(--violet-d);
   transform: translateY(-200%);
   transition: transform .6s ease-in-out;
@@ -145,7 +141,6 @@
 
 .header__main--active {
   transform: translateY(0);
-  justify-content: space-between;
 }
 
 .nav {
@@ -177,18 +172,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* MAIN */
 .hero {
   padding-bottom: 200px;
@@ -208,17 +191,16 @@
 }
 
 .about__content-detail {
-  padding: 30px 10px;
-  border-radius: 0 0 12px 12px;
   gap: 30px;
   flex-basis: 0;
+  padding: 30px 10px;
+  border-radius: 0 0 12px 12px;
   box-shadow: 2px 3px var(--black);
 }
+
 .about__content-detail a {
   align-self: center;
 }
-
-
 
 
 
@@ -238,10 +220,10 @@
 
 
 
+
 .work__list {
   flex-direction: column;
 }
-
 
 
 
@@ -265,15 +247,14 @@
 }
 
 .review__opinion {
-  background: url(../img/opinion-mob.svg) no-repeat center/ 100%;
   width: 210px;
+  background: url(../img/opinion-mob.svg) no-repeat center/ 100%;
 }
 
 .review__opinion-descr {
   padding: 15px 10px;
   min-height: max-content;
 }
-
 
 
 
@@ -292,11 +273,6 @@
 .footer__copyright {
   order: 1;
 }
-
-
-
-
-
 }
 
 
