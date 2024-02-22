@@ -109,6 +109,10 @@
   justify-content: space-between;
 }
 
+.header__main {
+  justify-content: space-between;
+}
+
 .header__logo {
   margin-right: 0;
 }
