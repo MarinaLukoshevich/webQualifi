@@ -132,6 +132,10 @@ section {
   background-color: var(--white);
 }
 
+.nav__list {
+  flex-wrap: wrap;
+}
+
 .nav__link {
   padding: 9.5px 17.5px;
   border-radius: 12px;
